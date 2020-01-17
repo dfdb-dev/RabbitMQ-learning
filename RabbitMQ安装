@@ -1,0 +1,8 @@
+# 安装erlang依赖环境
+rpm -ivh erlang-22.2-1.el7.x86_64.rpm
+# 上传RabbitMQ压缩包并解压
+xz -d rabbitmq-server-generic-unix-3.8.1.tar.xz
+tar xf rabbitmq-server-generic-unix-3.8.1.tar
+# 配置环境变量
+vim .base_profile
+export RABBTIMQ_HOME=安装目录
